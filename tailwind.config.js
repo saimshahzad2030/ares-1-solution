@@ -12,8 +12,11 @@ module.exports = {
         defaultTheme: "var(--app-theme-color)",
         lightTheme: "var(--app-theme-color-light)",
         darkTheme: "var(--app-theme-color-dark)",
+        lightBlack: "var(--light-black)",
+        darkBlack: "var(--dark-black)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

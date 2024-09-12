@@ -11,7 +11,7 @@ const ServicesSection = () => {
       <h2 className="text-white lexend-deca-bold text-[40px] text-center">
         We Offer Professional Security Solutions
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-12 gap-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-12 gap-12  ">
         {SERVICES.map((service, index) => (
           <div
             key={index}

@@ -8,6 +8,8 @@
   --app-theme-color:#0e1625;
   --app-theme-color-light:#57eef1;
   --app-theme-color-dark:#4b2999;
+  --dark-black:#1f1f1f;
+  --light-black:#9c9c9c;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -94,7 +96,12 @@ body {
 }
 
 
- 
+.lexend-deca-light{
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:300;
+  font-style: normal;
+}
 .lexend-deca-normal {
   font-family: "Lexend Deca", sans-serif;
   font-optical-sizing: auto;
@@ -102,12 +109,7 @@ body {
   font-style: normal;
 }
 
-.lexend-deca-bold{
-  font-family: "Lexend Deca", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600; 
-  font-style: normal;
-} 
+ 
 .lexend-deca-bold{
   font-family: "Lexend Deca", sans-serif;
   font-optical-sizing: auto;

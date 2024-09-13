@@ -73,7 +73,7 @@ const Navbar = () => {
           menuClicked ? "flex" : "hidden"
         } bg-defaultTheme h-screen w-full absolute top-0 left-0 flex-col items-center   z-40`}
       >
-        <div className="w-full flex flex-row items-center justify-end pr-4  my-4">
+        <div className="w-full flex flex-row items-center justify-end pr-4  my-4 mt-10">
           <Image
             className={"w-6 h-auto block   cursor-pointer"}
             imageObject={CROSS}
@@ -84,31 +84,46 @@ const Navbar = () => {
         </div>
         <Link
           href={"/"}
-          className="text-white text-[16px] w-full mt-12 text-center"
+          className={`text-white text-[16px] w-full mt-12 text-center transform opacity-0 ${
+            menuClicked ? "animate-slide-in" : ""
+          }`}
+          style={{ animationDelay: "0.1s" }}
         >
           Home
         </Link>
         <Link
           href={"/"}
-          className="text-white text-[16px] w-full mt-4 text-center"
+          className={`text-white text-[16px] w-full mt-4 text-center transform opacity-0 ${
+            menuClicked ? "animate-slide-in" : ""
+          }`}
+          style={{ animationDelay: "0.2s" }}
         >
           About
         </Link>
         <Link
           href={"/"}
-          className="text-white text-[16px] w-full mt-4 text-center"
+          className={`text-white text-[16px] w-full mt-4 text-center transform opacity-0 ${
+            menuClicked ? "animate-slide-in" : ""
+          }`}
+          style={{ animationDelay: "0.3s" }}
         >
           Services
         </Link>
         <Link
           href={"/"}
-          className="text-white text-[16px] w-full mt-4 text-center"
+          className={`text-white text-[16px] w-full mt-4 text-center transform opacity-0 ${
+            menuClicked ? "animate-slide-in" : ""
+          }`}
+          style={{ animationDelay: "0.4s" }}
         >
           Pricing
         </Link>
         <Link
           href={"/"}
-          className="text-white text-[16px]  w-full mt-4 text-center"
+          className={`text-white text-[16px] w-full mt-4 text-center transform opacity-0 ${
+            menuClicked ? "animate-slide-in" : ""
+          }`}
+          style={{ animationDelay: "0.5s" }}
         >
           Contact
         </Link>

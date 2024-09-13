@@ -8,6 +8,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        slideIn: {
+          "0%": { transform: "translateX(-100%)", opacity: 0 },
+          "100%": { transform: "translateX(0)", opacity: 1 },
+        },
+      },
+      animation: {
+        "slide-in": "slideIn 0.5s ease-out forwards",
+      },
       colors: {
         defaultTheme: "var(--app-theme-color)",
         lightTheme: "var(--app-theme-color-light)",

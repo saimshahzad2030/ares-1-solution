@@ -9,6 +9,7 @@ export const MAIL = { src: "/assets/tick-filled.svg", name: "tick" };
 export const LOCATION = { src: "/assets/tick-filled.svg", name: "tick" };
 export const VIDEO_ICON = { src: "/assets/video-icon-1.png", name: "video" };
 export const ARROW_RIGHT = { src: "/assets/arrow-right.svg", name: "arrow" };
+export const PAPER_PLANE = { src: "/assets/paper-plane.svg", name: "plane" };
 export const LINE_HORIZONTAL = {
   src: "/assets/line-horizontal.svg",
   name: "line",

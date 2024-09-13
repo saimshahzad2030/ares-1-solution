@@ -169,3 +169,20 @@ export const BLOGS = [
     comments: 2,
   },
 ];
+
+export const NAVIGATION_LINKS_FOOTER = [
+  { name: "Home", url: "/" },
+  { name: "About Us", url: "/" },
+  { name: "Services", url: "/" },
+  { name: "Pricing", url: "/" },
+  { name: "Blog", url: "/" },
+  { name: "Contact", url: "/" },
+];
+export const SERVICES_FOOTER = [
+  { name: "Network Security", url: "/" },
+  { name: "Database Security", url: "/" },
+  { name: "Web Security", url: "/" },
+  { name: "Locker Security", url: "/" },
+  { name: "Data Security", url: "/" },
+  { name: "Cloud Security", url: "/" },
+];

@@ -9,6 +9,7 @@ import Footer from "./component/Footer/Footer";
 import HomeVideoSection from "./component/HomeVideoSection/HomeVideoSection";
 import Testimonials from "./component/Testimonials/Testimonials";
 import NewsAndArticles from "./component/NewsAndArticles/NewsAndArticles";
+import Copyright from "./component/Copyright/Copyright";
 
 export default function Home() {
   return (
@@ -22,7 +23,8 @@ export default function Home() {
       <HomeVideoSection />
       <Testimonials />
       <NewsAndArticles />
-      {/* <Footer /> */}
+      <Footer />
+      <Copyright />
     </div>
   );
 }

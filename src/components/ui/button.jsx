@@ -21,6 +21,8 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         customButton:
           "bg-gradient-to-r from-purple-600 to-blue-500 text-white shadow-sm rounded-none   text-[17px]  hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600  transition-colors duration-300",
+        fieldButton:
+          "bg-gradient-to-r from-purple-600 to-blue-500 text-white shadow-sm rounded-none   text-[17px]  hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600  transition-colors duration-300",
       },
       size: {
         default: "h-9 px-4 py-2",

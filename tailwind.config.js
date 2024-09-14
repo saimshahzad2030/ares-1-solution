@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
+  //   darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,12 +10,36 @@ module.exports = {
     extend: {
       keyframes: {
         slideIn: {
-          "0%": { transform: "translateX(-100%)", opacity: 0 },
-          "100%": { transform: "translateX(0)", opacity: 1 },
+          "0%": {
+            transform: "translateX(-100%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: "1",
+          },
+        },
+        "accordion-down": {
+          from: {
+            height: "0",
+          },
+          to: {
+            height: "var(--radix-accordion-content-height)",
+          },
+        },
+        "accordion-up": {
+          from: {
+            height: "var(--radix-accordion-content-height)",
+          },
+          to: {
+            height: "0",
+          },
         },
       },
       animation: {
         "slide-in": "slideIn 0.5s ease-out forwards",
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
       },
       colors: {
         defaultTheme: "var(--app-theme-color)",
@@ -25,7 +49,6 @@ module.exports = {
         darkBlack: "var(--dark-black)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

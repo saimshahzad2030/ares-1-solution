@@ -1,19 +1,19 @@
 import Image from "next/image";
-import Navbar from "./component/Navbar/Navbar";
-import Hero from "./component/HeroSection/Hero";
-import AboutSection from "./component/AboutSection/AboutSection";
-import ServicesSection from "./component/ServicesSection/ServicesSection";
-import WhyChooseUs from "./component/WhyChooseUs/WhyChooseUs";
-import Portfolio from "./component/Portfolio/Portfolio";
-import Footer from "./component/Footer/Footer";
-import HomeVideoSection from "./component/HomeVideoSection/HomeVideoSection";
-import Testimonials from "./component/Testimonials/Testimonials";
-import NewsAndArticles from "./component/NewsAndArticles/NewsAndArticles";
-import Copyright from "./component/Copyright/Copyright";
+import Navbar from "../components/Navbar/Navbar";
+import Hero from "../components/HeroSection/Hero";
+import AboutSection from "../components/AboutSection/AboutSection";
+import ServicesSection from "../components/ServicesSection/ServicesSection";
+import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
+import Portfolio from "../components/Portfolio/Portfolio";
+import Footer from "../components/Footer/Footer";
+import HomeVideoSection from "../components/HomeVideoSection/HomeVideoSection";
+import Testimonials from "../components/Testimonials/Testimonials";
+import NewsAndArticles from "../components/NewsAndArticles/NewsAndArticles";
+import Copyright from "../components/Copyright/Copyright";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center ">
+    <div className="bg-white dark:bg-defaultTheme flex flex-col items-center ">
       <Navbar />
       <Hero />
       <AboutSection />

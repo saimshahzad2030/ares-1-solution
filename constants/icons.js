@@ -17,7 +17,7 @@ export const LINE_HORIZONTAL = {
 export const VIDEO_PLAY = { src: "/assets/video-play.svg", name: "video" };
 export const GO_TO = { src: "/assets/go-to.svg", name: "go-to" };
 export const STAR = { src: "/assets/star.svg", name: "star" };
-
+export const QUOTE = { src: "/assets/quote-img.png", name: "quote" };
 export const SERVICES_IMAGES = [
   {
     name: "service 1",

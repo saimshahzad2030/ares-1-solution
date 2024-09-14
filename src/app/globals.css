@@ -16,13 +16,17 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ffffff;
-  }
+
+     
+  } 
 }
 
-body { 
-  background: var(--foreground);
+/* background: var(--foreground); */
+/* body { 
+  background: white;
+
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 @layer utilities {
   .text-balance {

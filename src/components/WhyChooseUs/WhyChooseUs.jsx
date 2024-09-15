@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "../Image/Image";
 import { TICK_FILLED } from "../../../constants/icons";

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { ABOUT_US_PAGE_BANNER } from "../../../constants/images";
 import Image from "../Image/Image";

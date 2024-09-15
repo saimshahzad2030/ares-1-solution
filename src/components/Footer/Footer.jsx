@@ -91,7 +91,7 @@ const Footer = () => {
           </h2>
           <div className="bg-white flex flex-row items-center w-full">
             <Input
-              placeHolder="Enter your Email Address"
+              placeholder="Enter your Email Address"
               className="text-darkBlack"
             />
             <div className=" flex flex-col items-center justify-center p-1 h-14">

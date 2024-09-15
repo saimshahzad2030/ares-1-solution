@@ -33,7 +33,10 @@ const Statistics = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
         {STATISTICS.map((stats, index) => (
-          <div className="w-full flex flex-row items-center justify-center bg-gray-300 dark:bg-slate-700 bg-opacity-40 md:bg-opacity-20 py-12 md:py-4 hover:shadow-2xl transition-shadow duration-300">
+          <div
+            key={index}
+            className="w-full flex flex-row items-center justify-center bg-gray-300 dark:bg-slate-700 bg-opacity-40 md:bg-opacity-20 py-12 md:py-4 hover:shadow-2xl transition-shadow duration-300"
+          >
             <div className="rounded-full flex flex-col items-center justify-center bg-gradient-to-tr from-darkTheme to-lightTheme w-[100px] sm:w-[70px] h-[100px] sm:h-[70px] mr-4">
               <Image
                 imageObject={{ src: stats.image, name: stats.name }}

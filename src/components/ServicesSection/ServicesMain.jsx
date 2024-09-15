@@ -29,7 +29,7 @@ const ServicesMain = () => {
               <div className="absolute flex flex-col items-center justify-center h-[100px] w-[100px] bg-gradient-to-tr from-darkTheme to-lightTheme rounded-full transition-transform duration-200 z-3 top-[-50px]">
                 <Image imageObject={service.image} className={"w-8 h-auto"} />
               </div>
-              <h1 className="text-darkBlack darkk:text-white lexend-deca-bold text-[18px]">
+              <h1 className="text-darkBlack dark:text-white lexend-deca-bold text-[18px]">
                 {service.name}
               </h1>
               <p className=" text-lightBlack text-center mt-2 w-10/12 max-h-[70px] line-clamp-3">

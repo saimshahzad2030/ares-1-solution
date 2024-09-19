@@ -1,0 +1,7 @@
+.custom-toast {
+    background-color: white; /* Your custom background color */
+    color: #c40101;; /* Custom text color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Padding for the toast */
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1); 
+}

@@ -356,3 +356,27 @@ export const FAQS = [
       "Ransomware is malware that locks your data and demands payment for its release. Avoid it by regularly backing up your data and not opening suspicious email attachments.",
   },
 ];
+export const searchBlogs = (searchTerm) => {
+  // Convert search term to lowercase for case-insensitive search
+  const term = searchTerm.toLowerCase();
+
+  return BLOGS.filter((blog) => {
+    // Check if search term is in title or description
+    const inTitle = blog.title.toLowerCase().includes(term);
+    const inDescription = blog.description.toLowerCase().includes(term);
+
+    // Check if search term is in points or risks (if they exist)
+    const inPoints = blog.points?.some(
+      (point) =>
+        point.heading.toLowerCase().includes(term) ||
+        point.text.toLowerCase().includes(term)
+    );
+    const inRisks = blog.risks?.some(
+      (risk) =>
+        risk.heading.toLowerCase().includes(term) ||
+        risk.text.toLowerCase().includes(term)
+    );
+
+    return inTitle || inDescription || inPoints || inRisks;
+  });
+};

@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 import { BLOGS } from "../../../constants/constants";
 import Link from "next/link";
 
-const BlogsRightSection = () => {
+const BlogsRightSection = ({ query }) => {
   return (
     <div className="lexend-deca-normal text-darkBlack dark:text-white col-span-6 lg:col-span-2 w-full flex flex-col items-center">
       <div className="w-full flex flex-col items-start border border-lightBlack    p-8 rounded-lg">
@@ -43,7 +43,7 @@ const BlogsRightSection = () => {
             } border-lightBlack border-t-0 border-r-0 border-l-0 border-dashed `}
           >
             <Link
-              href={"/"}
+              href={`/blogs?query=${blog.title}`}
               className="text-4 hover:text-darkTheme hover:dark:text-lightTheme"
             >
               {blog.title}

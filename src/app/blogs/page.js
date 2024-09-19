@@ -5,7 +5,7 @@ import Footer from "@/components/Footer/Footer";
 import Copyright from "@/components/Copyright/Copyright";
 import { BlogsMain } from "@/components/Blogs/BlogsMain";
 
-const BlogsPage = () => {
+const BlogsPage =  () => {
   return (
     <div className="bg-white dark:bg-defaultTheme flex flex-col items-center ">
       <Navbar />

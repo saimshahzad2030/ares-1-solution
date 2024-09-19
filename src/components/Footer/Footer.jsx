@@ -3,10 +3,7 @@ import React from "react";
 import Image from "../Image/Image";
 import { LOGO, PAPER_PLANE } from "../../../constants/icons";
 import Link from "next/link";
-import {
-  NAVIGATION_LINKS_FOOTER,
-  SERVICES,
-} from "../../../constants/constants";
+import { NAVIGATION_LINKS, SERVICES } from "../../../constants/constants";
 import { Input } from "@/components/ui/input";
 import { Facebook } from "../../../public/assets/facebook.svg";
 import { Linkedin } from "lucide-react";
@@ -58,7 +55,7 @@ const Footer = () => {
           <div className="flex flex-col items-start w-full">
             <h2 className="mb-4 lexend-deca-bold text-[20px]">Navigation</h2>
             <ul className="group">
-              {NAVIGATION_LINKS_FOOTER.map((link, index) => (
+              {NAVIGATION_LINKS.map((link, index) => (
                 <li
                   className="text-[15px] text-lightBlack hover:text-lightTheme mt-2"
                   key={index}

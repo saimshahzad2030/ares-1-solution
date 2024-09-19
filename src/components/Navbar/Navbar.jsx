@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "../Image/Image";
 import { CART, CROSS, HAMBURGER, LOGO, SEARCH } from "../../../constants/icons";
+import { NAVIGATION_LINKS } from "../../../constants/constants";
 
 const Navbar = () => {
   const [menuClicked, setMenuClicked] = useState(false);
@@ -35,21 +36,15 @@ const Navbar = () => {
         className={`
          hidden lg:flex flex-col lg:flex-row w-full lg:w-auto items-center`}
       >
-        <Link href={"/"} className="text-white mr-16 text-[16px]">
-          Home
-        </Link>
-        <Link href={"/about-us"} className="text-white mr-16 text-[16px]">
-          About
-        </Link>
-        <Link href={"/our-services"} className="text-white mr-16 text-[16px]">
-          Services
-        </Link>
-        <Link href={"/"} className="text-white mr-16 text-[16px]">
-          Pricing
-        </Link>
-        <Link href={"/"} className="text-white text-[16px] ">
-          Contact
-        </Link>
+        {NAVIGATION_LINKS.map((link, index) => (
+          <Link
+            key={index}
+            href={link.url}
+            className="text-white mr-16 text-[16px]"
+          >
+            {link.name}
+          </Link>
+        ))}
       </div>
       <div className="flex flex-row items-center justify-end">
         <Image className={"w-6 h-auto mr-4"} imageObject={CART} />
@@ -76,51 +71,18 @@ const Navbar = () => {
             }}
           />
         </div>
-        <Link
-          href={"/"}
-          className={`text-white text-[16px] w-full mt-12 text-center transform opacity-0 ${
-            menuClicked ? "animate-slide-in" : ""
-          }`}
-          style={{ animationDelay: "0.1s" }}
-        >
-          Home
-        </Link>
-        <Link
-          href={"/about-us"}
-          className={`text-white text-[16px] w-full mt-4 text-center transform opacity-0 ${
-            menuClicked ? "animate-slide-in" : ""
-          }`}
-          style={{ animationDelay: "0.2s" }}
-        >
-          About
-        </Link>
-        <Link
-          href={"/our-services"}
-          className={`text-white text-[16px] w-full mt-4 text-center transform opacity-0 ${
-            menuClicked ? "animate-slide-in" : ""
-          }`}
-          style={{ animationDelay: "0.3s" }}
-        >
-          Services
-        </Link>
-        <Link
-          href={"/"}
-          className={`text-white text-[16px] w-full mt-4 text-center transform opacity-0 ${
-            menuClicked ? "animate-slide-in" : ""
-          }`}
-          style={{ animationDelay: "0.4s" }}
-        >
-          Pricing
-        </Link>
-        <Link
-          href={"/"}
-          className={`text-white text-[16px] w-full mt-4 text-center transform opacity-0 ${
-            menuClicked ? "animate-slide-in" : ""
-          }`}
-          style={{ animationDelay: "0.5s" }}
-        >
-          Contact
-        </Link>
+        {NAVIGATION_LINKS.map((link, index) => (
+          <Link
+            key={index}
+            href={link.url}
+            className={`text-white text-[16px] w-full mt-12 text-center transform opacity-0 ${
+              menuClicked ? "animate-slide-in" : ""
+            }`}
+            style={{ animationDelay: `0.${index + 1}s` }}
+          >
+            {link.name}
+          </Link>
+        ))}
       </div>
     </div>
   );

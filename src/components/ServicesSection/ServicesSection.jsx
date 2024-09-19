@@ -21,7 +21,7 @@ const ServicesSection = () => {
             <h1 className="lexend-deca-bold mt-4 text-[18px]">
               {service.name}
             </h1>
-            <p className="mt-4 text-[14px] text-[#9c9c9c] group-hover:text-white">
+            <p className="mt-4 text-[14px] text-[#9c9c9c] group-hover:text-white line-clamp-3">
               {service.description}
             </p>
             <Link href={service.url} className="mt-5">

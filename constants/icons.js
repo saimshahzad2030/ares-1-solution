@@ -18,6 +18,9 @@ export const VIDEO_PLAY = { src: "/assets/video-play.svg", name: "video" };
 export const GO_TO = { src: "/assets/go-to.svg", name: "go-to" };
 export const STAR = { src: "/assets/star.svg", name: "star" };
 export const QUOTE = { src: "/assets/quote-img.png", name: "quote" };
+export const USER_LOGO = { src: "/assets/user.svg", name: "user" };
+export const NOT_FOUND = { name: "Notfound", image: "/assets/not-found.svg" };
+
 export const SERVICES_IMAGES = [
   {
     name: "service 1",

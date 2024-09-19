@@ -21,7 +21,7 @@ const HeroGlobal = ({ urlName, url, heading, text }) => {
         {text}
       </h3>
       <div className="lexend-deca-bold flex flex-row items-center p-4 px-12 border border-lightTheme mt-6">
-        <Link href={"/about-us"} className="hover:text-lightTheme mr-2">
+        <Link href={"/"} className="hover:text-lightTheme mr-2">
           Home
         </Link>
         <ArrowRightIcon className="w-4 h-auto  fill-current " />

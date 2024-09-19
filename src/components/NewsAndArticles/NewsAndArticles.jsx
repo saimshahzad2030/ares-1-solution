@@ -1,51 +1,3 @@
-// import React from "react";
-// import { BLOGS } from "../../../../constants/constants";
-// import Image from "../Image/Image";
-// import { ARROW_RIGHT } from "../../../../constants/icons";
-// import Link from "next/link";
-
-// const NewsAndArticles = () => {
-//   return (
-//     <div className="relative lexend-deca-normal flex flex-col items-center w-full  py-8 md:py-24  px-4 lg:px-20">
-//       <h1 className="text-darkTheme">News & Articles</h1>
-//       <h2 className="text-darkBlack lexend-deca-bold text-[30px] sm:text-[40px] text-center">
-//         Our Latest Blog Posts
-//       </h2>
-//       <div className="mt-12 grid grid-cols-3 w-full gap-8">
-//         {BLOGS.map((blog, index) => (
-//           <div key={index} className="group flex flex-col items-center w-full">
-//             <Image
-//               imageObject={{ src: blog.image, name: "image" }}
-//               className={"w-full h-[200px] object-cover"}
-//             />
-//             <div
-//               key={index}
-//               className="group flex flex-col items-start w-10/12"
-//             >
-//               <h3 className="mt-8 lexend-deca-light text-[12px] text-darkTheme">{`
-//                 ${blog.date} - ${blog.comments} comments
-//               `}</h3>
-//               <h2 className="lexend-deca-bold min-h-[50px] mt-2 text-darkBlack group-hover:text-lightTheme transition-colors duration-300">
-//                 {blog.title}
-//               </h2>
-//               <p className="lexend-deca-light   mt-2 text-lightBlack min-h-[50px] text-[14px]">
-//                 {blog.description}
-//               </p>
-//               <Link href={blog.url}>
-//                 <Image
-//                   imageObject={ARROW_RIGHT}
-//                   className={"w-4 h-auto mt-4"}
-//                 />
-//               </Link>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default NewsAndArticles;
 import React from "react";
 import { BLOGS } from "../../../constants/constants";
 import Link from "next/link";
@@ -82,11 +34,6 @@ const NewsAndArticles = () => {
             key={index}
             className="group flex flex-col items-center w-full overflow-hidden"
           >
-            {/* <img
-              className="w-full h-[200px] object-cover  transition-transform duration-300 group-hover:scale-110"
-              src={blog.image}
-              alt="Blog"
-            /> */}
             <div className="relative w-full h-[250px] md:h-[200px] overflow-hidden">
               <img
                 className="absolute inset-0 w-full h-[250px] md:h-[200px] object-cover transition-transform duration-300 group-hover:scale-110"
@@ -105,7 +52,7 @@ const NewsAndArticles = () => {
               <h2 className="lexend-deca-bold min-h-[50px] mt-2 text-darkBlack dark:text-white group-hover:text-lightTheme transition-colors duration-300">
                 {blog.title}
               </h2>
-              <p className="lexend-deca-light mt-2 text-lightBlack min-h-[50px] text-[14px]">
+              <p className="lexend-deca-light mt-2 text-lightBlack min-h-[50px] text-[14px] line-clamp-4">
                 {blog.description}
               </p>
               <Link

@@ -7,13 +7,7 @@ export const Facebook = ({ className }) => (
     xmlns="http://www.w3.org/2000/svg"
     className={className}
   >
-    <g
-      id="Page-1"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fillRule="evenodd"
-    >
+    <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g
         id="Dribbble-Light-Preview"
         transform="translate(-385.000000, -7399.000000)"

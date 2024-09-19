@@ -3,6 +3,7 @@ import { SERVICES_IMAGES } from "./icons";
 export const SERVICES = [
   {
     image: SERVICES_IMAGES[0],
+    bgImage: "/assets/services-bg-01.jpg",
     name: "Network Security",
     url: "/",
     description:
@@ -10,6 +11,8 @@ export const SERVICES = [
   },
   {
     image: SERVICES_IMAGES[1],
+    bgImage: "/assets/services-bg-02.jpg",
+
     name: "Database Security",
     url: "/",
 
@@ -18,6 +21,8 @@ export const SERVICES = [
   },
   {
     image: SERVICES_IMAGES[2],
+    bgImage: "/assets/services-bg-03.jpg",
+
     url: "/",
     name: "Web Security",
     description:
@@ -25,6 +30,8 @@ export const SERVICES = [
   },
   {
     image: SERVICES_IMAGES[3],
+    bgImage: "/assets/services-bg-04.jpg",
+
     url: "/",
     name: "Locker Security",
     description:
@@ -33,12 +40,16 @@ export const SERVICES = [
   {
     image: SERVICES_IMAGES[4],
     url: "/",
+    bgImage: "/assets/services-bg-05.jpg",
+
     name: "Data Security",
     description:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat arem nulla pariatur.",
   },
   {
     image: SERVICES_IMAGES[5],
+    bgImage: "/assets/services-bg-06.jpg",
+
     url: "/",
     name: "Cloud Security",
     description:
@@ -96,46 +107,34 @@ export const TESTIMONIALS = [
   {
     name: "Kevin Andrew",
     designation: "Company Manager",
-    imageUrl:
-      "https://designingmedia.com/fortified/wp-content/uploads/2023/09/testimonials-img-2.png",
+    imageUrl: "/assets/testimonials-img-2.png",
     review:
       "“Effective results with minimum efforts from our clients are key to successful business agencies! & Thank you for your professional consultations for our project!”",
     rating: 5,
-    quoteImageUrl:
-      "https://designingmedia.com/fortified/wp-content/uploads/2024/03/quote-img.png",
   },
   {
     name: "Alina Parker",
     designation: "CEO, Global Tech",
-    imageUrl:
-      "https://designingmedia.com/fortified/wp-content/uploads/2023/09/testimonials-img-1.png",
+    imageUrl: "/assets/testimonials-img-1.png",
     review:
       "“What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.”",
     rating: 5,
-    quoteImageUrl:
-      "https://designingmedia.com/fortified/wp-content/uploads/2024/03/quote-img.png",
   },
   {
     name: "Kevin Andrew",
     designation: "Company Manager",
-    imageUrl:
-      "https://designingmedia.com/fortified/wp-content/uploads/2023/09/testimonials-img-2.png",
+    imageUrl: "/assets/testimonials-img-2.png",
     review:
       "“Effective results with minimum efforts from our clients are key to successful business agencies! & Thank you for your professional consultations for our project!”",
     rating: 5,
-    quoteImageUrl:
-      "https://designingmedia.com/fortified/wp-content/uploads/2024/03/quote-img.png",
   },
   {
     name: "Alina Parker",
     designation: "CEO, Global Tech",
-    imageUrl:
-      "https://designingmedia.com/fortified/wp-content/uploads/2023/09/testimonials-img-1.png",
+    imageUrl: "/assets/testimonials-img-1.png",
     review:
       "“What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.”",
     rating: 5,
-    quoteImageUrl:
-      "https://designingmedia.com/fortified/wp-content/uploads/2024/03/quote-img.png",
   },
 ];
 
@@ -172,17 +171,79 @@ export const BLOGS = [
 
 export const NAVIGATION_LINKS_FOOTER = [
   { name: "Home", url: "/" },
-  { name: "About Us", url: "/" },
+  { name: "About Us", url: "/about-us" },
   { name: "Services", url: "/" },
   { name: "Pricing", url: "/" },
   { name: "Blog", url: "/" },
   { name: "Contact", url: "/" },
 ];
-export const SERVICES_FOOTER = [
-  { name: "Network Security", url: "/" },
-  { name: "Database Security", url: "/" },
-  { name: "Web Security", url: "/" },
-  { name: "Locker Security", url: "/" },
-  { name: "Data Security", url: "/" },
-  { name: "Cloud Security", url: "/" },
+
+export const STATISTICS = [
+  {
+    name: "Global Projects",
+    value: 3329,
+    unit: null,
+    image: "/assets/statistics-1.png",
+  },
+  {
+    name: "Happy Clients",
+    value: 4587,
+    unit: null,
+    image: "/assets/statistics-2.png",
+  },
+  {
+    name: "Work Guarantee",
+    value: 100,
+    unit: "%",
+    image: "/assets/statistics-3.png",
+  },
+  {
+    name: "Experts Team",
+    value: 7845,
+    unit: null,
+    image: "/assets/statistics-4.png",
+  },
+];
+
+export const FAQS = [
+  {
+    question: "What is cyber security?",
+    answer:
+      "Cyber security involves protecting systems, networks, and programs from digital attacks that aim to access, change, or destroy sensitive data.",
+  },
+  {
+    question: "Why is two-factor authentication important?",
+    answer:
+      "Two-factor authentication adds an extra layer of security by requiring a second form of verification, making it harder for attackers to gain unauthorized access.",
+  },
+  {
+    question: "How can I secure my personal information online?",
+    answer:
+      "You can secure your information by using strong, unique passwords, enabling encryption, and being cautious of phishing attacks and suspicious links.",
+  },
+  {
+    question: "What is phishing and how can I prevent it?",
+    answer:
+      "Phishing is a method of tricking individuals into sharing sensitive information. To prevent it, avoid clicking on unknown links and verify the sender before responding to suspicious emails.",
+  },
+  {
+    question: "What is malware and how can I protect against it?",
+    answer:
+      "Malware is malicious software designed to harm devices or steal data. Protect against it by using updated antivirus software and avoiding untrustworthy websites or downloads.",
+  },
+  {
+    question: "Why should I update my software regularly?",
+    answer:
+      "Software updates patch security vulnerabilities that attackers can exploit. Regular updates ensure you have the latest security protections.",
+  },
+  {
+    question: "How does a VPN protect my data?",
+    answer:
+      "A VPN encrypts your internet connection, hiding your IP address and protecting your online activity from hackers or surveillance.",
+  },
+  {
+    question: "What is ransomware and how can I avoid it?",
+    answer:
+      "Ransomware is malware that locks your data and demands payment for its release. Avoid it by regularly backing up your data and not opening suspicious email attachments.",
+  },
 ];

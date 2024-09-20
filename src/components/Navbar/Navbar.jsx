@@ -35,7 +35,7 @@ const Navbar = () => {
       } fixed z-50 flex flex-row items-center justify-between bg-defaultTheme lexend-deca-bold w-full py-8 px-4 transition-shadow duration-300 ease-in-out`}
     >
       <Link href={"/"}>
-        <Image imageObject={LOGO} className={"w-auto h-8"} />
+        <Image imageObject={LOGO} className={"w-auto h-12"} />
       </Link>
       <div
         className={`

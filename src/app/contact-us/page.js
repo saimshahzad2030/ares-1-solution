@@ -9,7 +9,7 @@ import { Suspense } from "react";
 
 const ContactPage = () => {
   return (
-    <div className="bg-white dark:bg-defaultTheme flex flex-col items-center ">
+    <div className="bg-white dark:bg-defaultTheme flex flex-col items-center overflow-hidden">
       <Navbar />
       <Suspense>
         <HeroGlobal

@@ -18,6 +18,7 @@ const HeroGlobal = ({ urlName, url, heading, text }) => {
   console.log(searchBlogs1);
   return (
     <div
+      data-aos="fade-up"
       className="text-white w-full mt-20 h-[100vh] flex flex-col items-center justify-center  lexend-deca-light"
       style={{
         backgroundImage: `url(${ABOUT_US_PAGE_BANNER.src})`,

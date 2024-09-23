@@ -5,13 +5,16 @@ import { Location } from "../../../public/assets/location.svg";
 
 const ContactUsDirectives = () => {
   return (
-    <div className="w-full flex flex-col items-center">
+    <div data-aos="fade-up" className="w-full flex flex-col items-center">
       <h1 className="text-darkTheme dark:text-lightTheme">Contact Info</h1>
       <h2 className="text-darkBlack dark:text-white lexend-deca-bold text-[30px] sm:text-[40px] text-center">
         Our Contact Information
       </h2>
-      <div className="text-darkBlack dark:text-white grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-2 mt-12 sm:mt-8">
-        <div className="w-full flex flex-row items-center col-span-1 ">
+      <div className="text-darkBlack dark:text-white grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-2 mt-12 sm:mt-8 overflow-hidden">
+        <div
+          className="w-full flex flex-row items-center col-span-1 "
+          data-aos="flip-up"
+        >
           <div className="group flex flex-col items-center justify-center w-16 md:w-20 lg:w-24 h-16 md:h-20 lg:h-24 rounded-full bg-gradient-to-tr from-lightTheme to-darkTheme text-white">
             <Phone
               className={
@@ -29,7 +32,10 @@ const ContactUsDirectives = () => {
             </span>
           </div>
         </div>
-        <div className="w-full flex flex-row items-center col-span-1 ">
+        <div
+          className="w-full flex flex-row items-center col-span-1 "
+          data-aos="flip-up"
+        >
           <div className="group flex flex-col items-center justify-center w-16 md:w-20 lg:w-24 h-16 md:h-20 lg:h-24 rounded-full bg-gradient-to-tr from-lightTheme to-darkTheme text-white">
             <Mail
               className={
@@ -47,7 +53,10 @@ const ContactUsDirectives = () => {
             </span>
           </div>
         </div>
-        <div className="w-full flex flex-row items-center col-span-1 ">
+        <div
+          className="w-full flex flex-row items-center col-span-1 "
+          data-aos="flip-up"
+        >
           <div className="group flex flex-col items-center justify-center w-16 md:w-20 lg:w-24 h-16 md:h-20 lg:h-24 rounded-full bg-gradient-to-tr from-lightTheme to-darkTheme text-white">
             <Location
               className={

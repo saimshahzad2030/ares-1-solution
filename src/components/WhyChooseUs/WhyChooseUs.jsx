@@ -8,8 +8,14 @@ import { WHY_CHOOSE_US_BG } from "../../../constants/images";
 
 const WhyChooseUs = () => {
   return (
-    <div className="  lexend-deca-normal flex flex-col-reverse lg:flex-row items-center gap-4 py-16 md:py-28 px-4   lg:px-20 overflow-x-autox-hidden">
-      <div className=" w-full lg:w-3/5 flex flex-col items-start  mt-12 lg:mt-0">
+    <div
+      data-aos="fade-up"
+      className=" overflow-hidden lexend-deca-normal flex flex-col-reverse lg:flex-row items-center gap-4 py-16 md:py-28 px-4   lg:px-20 overflow-x-autox-hidden"
+    >
+      <div
+        className=" w-full lg:w-3/5 flex flex-col items-start  mt-12 lg:mt-0"
+        data-aos="fade-right"
+      >
         <h1 className="  text-darkTheme dark:text-lightTheme">Why Choose Us</h1>
         <h2 className=" lexend-deca-bold mt-6 text-[32px] sm:text-[40px] leading-[32px] sm:leading-[44px] text-darkBlack dark:text-white">
           Expert Support to Enhance Your Cyber Defenses
@@ -32,13 +38,20 @@ const WhyChooseUs = () => {
         </Button>
       </div>
       <div className="  w-full lg:w-2/5 flex flex-col items-center justify-center  ">
-        <div className="flex w-10/12 sm:w-7/12 lg:w-full flex-col items-center justify-center relative">
+        <div className="flex w-10/12 sm:w-7/12 lg:w-full flex-col items-center justify-center relative ">
           <Image
+            dataAos="flip-left"
             className={"z-10 w-full *: h-auto"}
             imageObject={WHY_CHOOSE_US_BG}
           />
-          <div className="z-1 absolute w-14 sm:w-28 h-14 sm:h-28 bg-gradient-to-tr from-darkTheme to-lightTheme rounded-full  top-[-28px]  right-[-28px] sm:top-[-56px]  sm:right-[-56px]"></div>
-          <div className="z-1 absolute w-14 sm:w-28 h-14 sm:h-28 bg-gradient-to-tr from-darkTheme to-lightTheme rounded-full bottom-[-28px]  left-[-28px]  sm:bottom-[-56px]  sm:left-[-56px]"></div>
+          <div
+            data-aos="fade-down-left"
+            className="z-1 absolute w-14 sm:w-28 h-14 sm:h-28 bg-gradient-to-tr from-darkTheme to-lightTheme rounded-full  top-[-28px]  right-[-28px] sm:top-[-56px]  sm:right-[-56px]"
+          ></div>
+          <div
+            data-aos="fade-up-right"
+            className="z-1 absolute w-14 sm:w-28 h-14 sm:h-28 bg-gradient-to-tr from-darkTheme to-lightTheme rounded-full bottom-[-28px]  left-[-28px]  sm:bottom-[-56px]  sm:left-[-56px]"
+          ></div>
         </div>
       </div>
     </div>

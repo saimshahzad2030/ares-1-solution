@@ -14,7 +14,10 @@ import { Location } from "../../../public/assets/location.svg";
 
 const Footer = () => {
   return (
-    <div className="w-full lexend-deca-light grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 sm:px-4 lg:px-20 bg-defaultTheme">
+    <div
+      data-aos="fade-up"
+      className="w-full lexend-deca-light grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 sm:px-4 lg:px-20 bg-defaultTheme"
+    >
       <div className="text-[14px]   text-white col-span-2 w-full flex-col items-start bg-gradient-to-r from-darkTheme to-lightTheme  p-8 pb-12">
         <Image imageObject={LOGO} className={"h-16 w-auto"} />
         <p className=" my-4 ">

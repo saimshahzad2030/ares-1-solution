@@ -23,14 +23,18 @@ export const ArrowRightIcon = ({ className }) => (
 
 const NewsAndArticles = () => {
   return (
-    <div className="relative lexend-deca-normal flex flex-col items-center w-full py-8 md:py-24 px-4 lg:px-20">
+    <div
+      data-aos="fade-up"
+      className="relative lexend-deca-normal flex flex-col items-center w-full py-8 md:py-24 px-4 lg:px-20"
+    >
       <h1 className="text-darkTheme dark:text-lightTheme">News & Articles</h1>
       <h2 className="text-darkBlack dark:text-white lexend-deca-bold text-[30px] sm:text-[40px] text-center">
         Our Latest Blog Posts
       </h2>
-      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-8">
+      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-8 overflow-hidden">
         {BLOGS.map((blog, index) => (
           <div
+            data-aos="zoom-in"
             key={index}
             className="group flex flex-col items-center w-full overflow-hidden"
           >

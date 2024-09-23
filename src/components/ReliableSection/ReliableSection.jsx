@@ -14,15 +14,22 @@ const ReliableSection = () => {
         backgroundImage: `url(${ABOUT_US_PAGE_RELIABLE_BG.src})`,
         backgroundSize: "cover",
       }}
+      data-aos="fade-up"
       className="w-full lexend-deca-light grid grid-cols-1 lg:grid-cols-2  px-4 lg:px-12 bg-defaultTheme py-24"
     >
-      <div className="transition-transform duration-300 ease-in-out hover:-translate-y-3">
+      <div
+        data-aos="fade-right"
+        className="transition-transform duration-300 ease-in-out hover:-translate-y-3"
+      >
         <Image
           className="w-full bg-cover cursor-pointer"
           imageObject={ABOUT_US_PAGE_RELIABLE_IMAGE}
         />
       </div>
-      <div className="flex flex-col items-start w-full justify-center">
+      <div
+        data-aos="fade-left"
+        className="flex flex-col items-start w-full justify-center"
+      >
         <h1 className="text-lightTheme mt-14 md:mt-0 w-full text-center md:text-start">
           Reliable IT & Cyber Security
         </h1>

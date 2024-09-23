@@ -10,7 +10,10 @@ import { FAQS } from "../../../constants/constants";
 
 const Faqs = () => {
   return (
-    <div className="lexend-deca-light flex flex-col items-center w-full justify-center py-16 md:py-28 px-4   lg:px-20 ">
+    <div
+      data-aos="fade-up"
+      className="lexend-deca-light flex flex-col items-center w-full justify-center py-16 md:py-28 px-4   lg:px-20 "
+    >
       <h1 className="text-darkTheme dark:text-lightTheme mt-14 md:mt-0  text-center  w-full">
         Faq's
       </h1>
@@ -23,7 +26,11 @@ const Faqs = () => {
         className="grid grid-cols-1 sm:grid-cols-2 w-full gap-x-8 gay-y-4 mt-12"
       >
         {FAQS.map((faq, index) => (
-          <AccordionItem value={`item-${index + 1}`} key={index}>
+          <AccordionItem
+            data-aos="fade-down"
+            value={`item-${index + 1}`}
+            key={index}
+          >
             <AccordionTrigger>{faq.question}</AccordionTrigger>
             <AccordionContent>{faq.answer}</AccordionContent>
           </AccordionItem>

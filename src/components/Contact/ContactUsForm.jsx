@@ -48,7 +48,10 @@ const ContactUsForm = () => {
   };
 
   return (
-    <div className="w-full flex flex-col items-center mt-12 md:mt-36">
+    <div
+      data-aos="fade-up"
+      className="w-full flex flex-col items-center mt-12 md:mt-36"
+    >
       <h1 className="text-darkTheme dark:text-lightTheme">Get in Touch</h1>
       <h2 className="text-darkBlack dark:text-white lexend-deca-bold text-[30px] sm:text-[40px] text-center">
         Send us a Message

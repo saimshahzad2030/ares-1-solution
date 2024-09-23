@@ -29,7 +29,10 @@ const Testimonials = () => {
   }, [api]);
 
   return (
-    <div className="relative flex flex-col items-center w-full py-8 md:py-24 px-4 lg:px-20 overflow-hidden">
+    <div
+      data-aos="fade-up"
+      className="relative flex flex-col items-center w-full py-8 md:py-24 px-4 lg:px-20 overflow-hidden"
+    >
       {/* Optional background image */}
       {/* <Image
         className="hidden md:absolute w-full md:w-3/12 h-auto bottom-0 left-0"

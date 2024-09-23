@@ -12,9 +12,13 @@ const Statistics = () => {
         backgroundImage: `url(${ABOUT_US_PAGE_RELIABLE_BG.src})`,
         backgroundSize: "cover",
       }}
+      data-aos="fade-up"
       className="dark:bg-defaultTheme lexend-deca-normal grid grid-cols-1 lg:grid-cols-2 gap-4 py-16 md:py-28 px-4   lg:px-20 overflow-x-autox-hidden"
     >
-      <div className="flex flex-col items-start w-full justify-center">
+      <div
+        className="flex flex-col items-start w-full justify-center"
+        data-aos="fade-right"
+      >
         <h1 className="text-darkTheme dark:text-lightTheme mt-14 md:mt-0 w-full text-center md:text-start">
           Reliable IT & Cyber Security
         </h1>
@@ -31,7 +35,10 @@ const Statistics = () => {
           maxime placeat facere possimus.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full"
+        data-aos="fade-left"
+      >
         {STATISTICS.map((stats, index) => (
           <div
             key={index}

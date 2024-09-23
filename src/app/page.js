@@ -13,7 +13,7 @@ import Copyright from "../components/Copyright/Copyright";
 
 export default function Home() {
   return (
-    <div className="bg-white dark:bg-defaultTheme flex flex-col items-center ">
+    <div className="bg-white dark:bg-defaultTheme flex flex-col items-center overflow-hidden">
       <Navbar />
       <Hero />
       <AboutSection />

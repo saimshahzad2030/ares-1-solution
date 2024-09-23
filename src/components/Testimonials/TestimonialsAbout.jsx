@@ -32,8 +32,14 @@ const TestimonialsAbout = () => {
   }, [api]);
 
   return (
-    <div className="relative grid grid-cols-1 md:grid-cols-2 w-full py-8 md:py-24 px-4 lg:px-20 overflow-hidden">
-      <div className="relative flex flex-col items-center justify-center w-full">
+    <div
+      data-aos="fade-up"
+      className="relative grid grid-cols-1 md:grid-cols-2 w-full py-8 md:py-24 px-4 lg:px-20 overflow-hidden"
+    >
+      <div
+        data-aos="fade-right"
+        className="relative flex flex-col items-center justify-center w-full"
+      >
         <Image
           imageObject={ABOUT_US_TESTIMONIALS_INSIDE}
           className={"w-6/12 absolute  h-auto"}
@@ -43,7 +49,10 @@ const TestimonialsAbout = () => {
           className={"w-10/12 md:absolute h-auto"}
         />
       </div>
-      <div className="mt-12 md:mt-0 flex flex-col items-start w-full">
+      <div
+        data-aos="fade-left"
+        className="mt-12 md:mt-0 flex flex-col items-start w-full"
+      >
         <h1 className="text-darkTheme md:text-start text-center dark:text-lightTheme w-full">
           Testimonials
         </h1>

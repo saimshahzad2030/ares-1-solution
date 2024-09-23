@@ -27,7 +27,10 @@ const Portfolio = () => {
     });
   }, [api]);
   return (
-    <div className="lexend-deca-normal flex flex-col items-center w-full my-8 md:my-20 px-4 lg:px-20">
+    <div
+      data-aos="fade-up"
+      className="lexend-deca-normal flex flex-col items-center w-full my-8 md:my-20 px-4 lg:px-20"
+    >
       <h1 className="text-darkTheme dark:text-lightTheme">Portfolio</h1>
       <h2 className="text-darkBlack dark:text-white lexend-deca-bold text-[30px] sm:text-[40px] text-center">
         Our Latest Case Studies
@@ -42,12 +45,16 @@ const Portfolio = () => {
         >
           <CarouselContent>
             {CASE_STUDIES.map((cs, index) => (
-              <CarouselItem className={`sm:basis-2/4 lg:basis-1/3`} key={index}>
+              <CarouselItem
+                className={`sm:basis-2/4 lg:basis-1/3 overflow-hidden`}
+                key={index}
+              >
                 <div
                   style={{
                     backgroundImage: `url(${cs.image.src})`,
                     backgroundSize: "cover",
                   }}
+                  data-aos="zoom-out-up"
                   className={`group relative lexend-deca-light text-white flex flex-col items-start justify-end w-full h-[400px] p-8 transition-colors duration-300`}
                 >
                   {/* Overlay */}

@@ -11,9 +11,12 @@ import { Button } from "@/components/ui/button";
 import CountUp from "react-countup";
 const AboutSection = () => {
   return (
-    <div className="bg-white dark:bg-defaultTheme relative lexend-deca-normal flex flex-col md:flex-row items-center w-full my-8 md:my-24 md:px-4 lg:px-24">
+    <div
+      data-aos="fade-up"
+      className="bg-white dark:bg-defaultTheme relative lexend-deca-normal flex flex-col md:flex-row items-center w-full my-8 md:my-24 md:px-4 lg:px-24 overflow-hidden"
+    >
       <div className="relative w-11/12 sm:w-10/12 md:w-6/12 flex flex-row items-center justify-center h-auto md:h-[460px] lg:h-[560px] text-white ">
-        <div className="w-[152px] h-[152px] bg-white dark:bg-defaultTheme absolute rounded-full  flex flex-col items-center justify-center">
+        <div className="z-50 w-[152px] h-[152px] bg-white dark:bg-defaultTheme absolute rounded-full  flex flex-col items-center justify-center">
           <div className="w-36 h-36 bg-gradient-to-tr from-darkTheme to-lightTheme rounded-full left-[36%] flex flex-col items-center justify-center px-4">
             <h2 className="lexend-deca-bold text-[28px] leading-[32px]">
               <CountUp start={1} end={30} duration={2.75} />+
@@ -21,22 +24,31 @@ const AboutSection = () => {
             <p className="text-center">Years of experience</p>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-between h-full w-full md:w-6/12  ">
+        <div className="overflow-x-hidden flex flex-col items-center justify-between h-full w-full md:w-6/12  ">
           <Image
+            dataAos="fade-right"
             className="md:h-[220px] lg:h-[270px] md:w-auto w-full h-auto"
             imageObject={ABOUT_IMG_1}
           />
           <Image
+            dataAos="fade-right"
             className="md:h-[220px] lg:h-[270px] md:w-auto w-full h-auto mt-4"
             imageObject={ABOUT_IMG_2}
           />
         </div>
 
-        <div className="hidden md:flex flex-row items-center justify-end">
-          <Image className="w-11/12 h-auto" imageObject={ABOUT_IMG_3} />
+        <div className="hidden md:flex flex-row items-center justify-end overflow-hidden">
+          <Image
+            dataAos="flip-up"
+            className="w-11/12 h-auto"
+            imageObject={ABOUT_IMG_3}
+          />
         </div>
       </div>
-      <div className="w-11/12 sm:w-10/12 md:w-6/12 flex flex-col items-center md:items-start justify-center h-auto md:h-[560px] px-0 md:px-4 text-[#1f1f1f]">
+      <div
+        data-aos="fade-left"
+        className="w-11/12 sm:w-10/12 md:w-6/12 flex flex-col items-center md:items-start justify-center h-auto md:h-[560px] px-0 md:px-4 text-[#1f1f1f]"
+      >
         <h3 className="text-darkTheme dark:text-lightTheme mt-14 md:mt-0 w-full text-center md:text-start">
           About Us
         </h3>

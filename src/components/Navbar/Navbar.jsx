@@ -34,9 +34,11 @@ const Navbar = () => {
         hasScrolled ? "shadow-xl shadow-gray-500/50" : ""
       } fixed z-50 flex flex-row items-center justify-between bg-defaultTheme lexend-deca-bold w-full py-8 px-4 transition-shadow duration-300 ease-in-out`}
     >
-      <Link href={"/"}>
-        <Image imageObject={LOGO} className={"w-auto h-12"} />
-      </Link>
+      <div className="flex flex-col items-start w-2/12">
+        <Link href={"/"}>
+          <Image imageObject={LOGO} className={"w-auto h-12"} />
+        </Link>
+      </div>
       <div
         className={`
          hidden lg:flex flex-col lg:flex-row w-full lg:w-auto items-center`}

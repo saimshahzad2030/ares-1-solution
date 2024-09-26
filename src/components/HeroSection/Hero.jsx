@@ -9,8 +9,8 @@ import { Button } from "@/components/ui/button";
 const Hero = () => {
   return (
     <div
-      data-aos="fade-up"
-      className={`mt-24 lexend-deca-bold relative text-white flex flex-col items-center md:items-start justify-center w-full h-[120vh]  sm:h-[100vh] ${styles.hero}`}
+      // data-aos="fade-up"
+      className={`overflow-x-hidden mt-24 lexend-deca-bold relative text-white flex flex-col items-center md:items-start justify-center w-full h-[120vh]  sm:h-[100vh] ${styles.hero}`}
     >
       <div
         className="flex flex-col items-center md:items-start px-4 w-11/12 md:w-7/12 lg:w-6/12"

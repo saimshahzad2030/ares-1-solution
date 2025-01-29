@@ -27,8 +27,8 @@ const Hero = () => {
           Fast & Effective Solutions with Fortified
         </h1>
         <h3 className="lexend-deca-normal text-[14px] md:text-[18px] mt-3 text-center md:text-start">
-          Eiusmod enim tempor incididunt aut labore et dolore magna aliua ruis
-          nostrud exercitation ullamco laboris.
+          A modern and efficient approach to achieving results without
+          unnecessary effort or complications.
         </h3>
         <div className="lexend-deca-normal flex flex-col md:flex-row items-center mt-6">
           <Button variant="customButton" size="lg">

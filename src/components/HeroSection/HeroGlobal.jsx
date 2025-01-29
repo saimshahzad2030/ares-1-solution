@@ -8,14 +8,12 @@ import { useSearchParams } from "next/navigation";
 import { searchBlogs } from "../../../constants/constants";
 
 const HeroGlobal = ({ urlName, url, heading, text }) => {
-  const searchParams = useSearchParams(); // Access search parameters from the URL
-  const query = searchParams.get("query"); // Get the 'query' parameter from the URL
-  console.log(query);
+  const searchParams = useSearchParams();
+  const query = searchParams.get("query");
   let searchBlogs1;
   if (query) {
     searchBlogs1 = searchBlogs(query);
   }
-  console.log(searchBlogs1);
   return (
     <div
       data-aos="fade-up"
@@ -48,8 +46,8 @@ const HeroGlobal = ({ urlName, url, heading, text }) => {
         <Link href={url} className="ml-2 text-lightTheme">
           {query
             ? searchBlogs1.length > 0
-              ? ` ${query} `
-              : `  ${query} `
+              ? `${query}`
+              : `${query}`
             : urlName}
         </Link>
       </div>

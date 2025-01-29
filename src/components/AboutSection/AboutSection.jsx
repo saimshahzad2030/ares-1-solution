@@ -56,9 +56,9 @@ const AboutSection = () => {
           Provides Best Approach To Security
         </h1>
         <p className="text-lightBlack   text-center md:text-start mt-4 w-full">
-          Amet consectetur adipiscing elit adipis eleifend dictum poten mattis
-          viverra eget quam lacus enimcing inti porttitor bibenu relit duiteri
-          nisl areo nuam lacus.
+          We ensure a robust and reliable security framework with advanced
+          protection measures, safeguarding your assets and data with
+          cutting-edge solutions.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 sm:gap-x-[0.5px] w-full sm:w-11/12 bg-white dark:bg-defaultTheme md:bg-[#b4b4b4] mt-4">
           <div className="flex flex-col items-center w-full   px-2">

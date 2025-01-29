@@ -32,7 +32,7 @@ const Navbar = () => {
     <div
       className={`${
         hasScrolled ? "shadow-xl shadow-gray-500/50" : ""
-      } fixed z-50 flex flex-row items-center justify-between bg-defaultTheme lexend-deca-bold w-full py-8 px-4 transition-shadow duration-300 ease-in-out`}
+      } fixed z-50 flex flex-row items-center justify-between bg-defaultTheme lexend-deca-bold w-full py-4 px-4 transition-shadow duration-300 ease-in-out`}
     >
       <div className="flex flex-col items-start w-2/12">
         <Link href={"/"}>
